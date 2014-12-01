@@ -1,0 +1,11 @@
+content jason chrome/content/
+skin jason jasonskin chrome/skin/
+resource jasonskin chrome/skin/
+resource jasonresources chrome/content/
+overlay chrome://browser/content/browser.xul chrome://jason/content/jason.xul
+
+component {2027cd20-b21a-11e3-a5e2-0800200c9a66} components/application-json-to-html-stream.js
+contract @mozilla.org/streamconv;1?from=application/json&to=*/* {2027cd20-b21a-11e3-a5e2-0800200c9a66}
+
+component {2027cd20-b21a-11e3-a5e2-0800200c9a66} components/application-json-to-html-stream.js
+contract @mozilla.org/streamconv;1?from=text/json&to=*/* {2027cd20-b21a-11e3-a5e2-0800200c9a66}

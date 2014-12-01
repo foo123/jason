@@ -1,0 +1,95 @@
+body {
+    color: #333;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0 auto;
+    padding-top: 30px;
+    width: 100%;
+    position: relative;
+}
+
+.wrapper
+{
+    position: relative;
+    display: block;
+    padding: 0; margin: 0;
+    width: 100%; height: 100%;
+}
+
+.button 
+{
+    display: inline-block;
+    vertical-align: middle;
+    position:relative;
+    margin: 0; padding: 0;
+    margin-right: 5px;
+    width: 32px;
+    height: 32px;
+    cursor: pointer !important;
+    outline: none;
+    border: 0;
+    overflow: hidden;
+}
+.button:active,
+.button:focus,
+.button:hover 
+{
+    border: 0;
+    outline: none;
+}
+.button.save-button 
+{
+    background: url(save-icon.png) no-repeat 0 0;
+}
+
+#controls
+{
+    position: fixed;
+    padding: 0; margin: 0;
+    top: 12px;
+    right: 15px;
+    display: none;
+    z-index: -1;
+    text-align: right;
+}
+
+#in ~ #controls:hover,
+#in:hover ~ #controls:hover,
+#in:hover ~ #controls
+{
+    z-index: 10;
+    display: block;
+}
+#in ~ #controls:hover,
+#in:hover ~ #controls:hover
+{
+    opacity: 1;
+}
+#in:hover ~ #controls
+{
+    opacity: 0.6;
+}
+
+#in{
+  position: relative;
+  padding: 0; margin: 0;
+  overflow: hidden;
+  width: 100%; height: 100%;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+  overflow: hidden;
+}
+.CodeMirror{
+  position: relative;
+  padding: 0; margin: 0;
+  width: 100%; height: 100%;
+  overflow: hidden;
+}
+.CodeMirror pre{
+  line-height: 24px;
+  font-size: 16px;
+}
+.CodeMirror-scroll {
+  height: 100%;
+  min-height: 100%;
+}
